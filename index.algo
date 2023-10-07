@@ -1,0 +1,16 @@
+ALGORITHM tri_insert
+VAR
+  tab : ARRAY_OF INTEGER[i];
+  i,j,k : INTEGER;
+BEGIN
+    FOR i FROM 0 TO i-1 STEP step1  DO
+        k := tab[i]
+        j := i
+
+        WHILE (j>0 and tab[j-1]>k) DO
+        tab[j] = tab[j-1]
+        j=j-1
+        END_WHILE
+        tab[j]=k
+    END_FOR
+END
